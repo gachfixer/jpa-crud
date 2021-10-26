@@ -14,7 +14,7 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.List;
+
 
 @SpringBootApplication
 public class CrudApplication {
@@ -34,13 +34,14 @@ public class CrudApplication {
     public CommandLineRunner demo(CustomerRepository repository) {
         return (args) -> {
 
+
             //RestTemplate restTemplate = new RestTemplate();
 
             //String quote = restTemplate.getForObject(
                  //   "http://139.59.160.251/usrTechn/GetLocations.action", String.class);
           //  log.info(quote);
 
-            log.info("");
+           /* log.info("");
             Users users = new Users();
             users.setUserEmail("josephgacher@gmail.com");
             users.setUserFirstName("Joseph");
@@ -54,7 +55,7 @@ public class CrudApplication {
 
             usersRepository.findUsersByUserEmail("josephgacher@gmail.com").forEach(person -> {
                 log.info(person.getUserEmail());
-            });
+            });*/
             ;
           // save a few customers
            /* repository.save(new Customers("Jack", "Bauer"));
@@ -101,8 +102,11 @@ public class CrudApplication {
             usersRepository.findUsersByUserEmail("josephgacher@gmail.com").forEach(person -> {
                 log.info(person.getUserEmail());
             });*/
+
         };
     }
+
+
 
 
 
